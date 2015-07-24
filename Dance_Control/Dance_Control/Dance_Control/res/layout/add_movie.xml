@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <TextView
+        android:id="@+id/add_movie_title_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/Common_Text"
+        android:text="视频链接地址："
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/add_movie_url"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/add_movie_title_text_1"
+        android:layout_below="@id/add_movie_title_text_1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/no_edge_edit_shape"
+        android:hint="右上角点击提示 - 如:http://nba.com/fda.swf"
+        android:paddingLeft="3dp"
+        android:singleLine="true"
+        android:textSize="@dimen/CommenTextSize" />
+
+    <ImageButton
+        android:id="@+id/add_movie_help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/add_movie_url"
+        android:layout_alignRight="@id/add_movie_url"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_explain_n" />
+
+    <TextView
+        android:id="@+id/add_movie_title_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_movie_url"
+        android:layout_marginTop="10dp"
+        android:background="@color/Common_Text"
+        android:text="视频介绍："
+        android:textSize="@dimen/CommenTextSize" />
+
+    <EditText
+        android:id="@+id/add_movie_intro"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/add_movie_title_text_2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/no_edge_edit_shape"
+        android:gravity="left|top"
+        android:hint="视频介绍"
+        android:padding="5dp"
+        android:textSize="@dimen/CommenTextSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/add_movie_intro"
+        android:background="@color/BackTopColor" >
+
+        <ImageView
+            android:id="@+id/add_movie_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/inform_shape"
+            android:scaleType="fitXY"
+            android:src="@drawable/setimage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_movie_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp" >
+
+        <Button
+            android:id="@+id/add_movie_put"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="提交"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/add_movie_exit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="退出"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

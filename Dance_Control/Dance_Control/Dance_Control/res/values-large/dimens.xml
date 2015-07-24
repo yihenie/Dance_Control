@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="menu_offset">10dp</dimen>
+    <dimen name="menu_shadow_width">15dp</dimen>
+    <dimen name="SmallTextSize">15sp</dimen>
+    <dimen name="LowNameTextSize">23sp</dimen>
+    <dimen name="LowWordTextSize">25sp</dimen>
+    <dimen name="LowTimeTextSize">20sp</dimen>
+    <dimen name="LowTitleTextSize">25sp</dimen>
+    <dimen name="LowSWTextSize">25sp</dimen>
+    <dimen name="TipDialogWordSize">23sp</dimen>
+    <dimen name="TipDialogBtuDistance">13dp</dimen>
+    <dimen name="CommenTextSize">21sp</dimen>
+    <dimen name="CommenHintSize">19sp</dimen>
+    <dimen name="InfoTitleSize">25sp</dimen>
+    <dimen name="EditTextHeight">40dp</dimen>
+    <dimen name="EmotionHeight">50dp</dimen>
+    <dimen name="EmotionBtuHeight">40dp</dimen>
+    <dimen name="ChangNameSmallText">13sp</dimen>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dance_control"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+	<uses-permission android:name="android.permission.INTERNET" />
+ 	<!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+           android:name="com.example.dance_control.utils.Welcome"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:name="com.example.dance_control.utils.Act_Show" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name ="com.example.dance_control.activity.Ac_AddInfo"/>
+        
+        <activity android:name ="com.example.dance_control.activity.Ac_AddMovie"></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_Join"></activity>
+        <activity android:name = "com.example.dance_control.activity.Ac_Repeat">
+           
+        </activity>
+        <activity android:name = "com.example.dance_control.utils.Act_MyRigment" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name = "com.example.dance_control.activity.Ac_Visit"></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_AddRegiment" ></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_ShowInfo"></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_ShowMovie"></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_Show_Movie" ></activity>
+        <activity android:name = "com.example.dance_control.activity.Ac_AddTalk"></activity>
+        <activity android:name = "com.example.dance_control.activity.Ac_Dital_Info"></activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_Show_Shuffle" android:hardwareAccelerated="true">
+            
+        </activity>
+        <activity android:name ="com.example.dance_control.activity.Ac_ShowAllPic"></activity>
+        <activity android:name = "com.example.dance_control.activity.GainAllMusic"></activity>
+        <service  android:name = "com.example.dance_control.backworker.UpdatePicServer"></service>
+        <service  android:name = "com.example.dance_control.backworker.UpdateMusicService"/>"
+    </application>
+
+</manifest>

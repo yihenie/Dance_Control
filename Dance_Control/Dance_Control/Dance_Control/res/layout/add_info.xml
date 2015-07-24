@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/add_info_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/add_info_title"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/no_edge_edit_shape"
+                android:gravity="left|top"
+                android:hint="标题"
+                android:padding="3dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_info_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_info_layout_2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/add_info_brief"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/no_edge_edit_shape"
+                android:gravity="left|top"
+                android:hint="简讯"
+                android:padding="3dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_info_line_img"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/add_info_layout_4"
+            android:layout_marginTop="10dp"
+            android:background="@color/EditLine" />
+
+        <EditText
+            android:id="@+id/add_info_intro"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/add_info_line_img"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:gravity="left|top"
+            android:hint="资讯内容"
+            android:padding="5dp"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/add_info_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_info_intro"
+            android:background="@color/BackTopColor" >
+
+            <ImageButton
+                android:id="@+id/add_info_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/setimage"
+                android:background="@color/White"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/add_info_layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp" >
+
+            <Button
+                android:id="@+id/add_info_put"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btu_selector"
+                android:text="提交"
+                android:textColor="@color/BtuTextColor" />
+
+            <Button
+                android:id="@+id/add_info_exit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btu_selector"
+                android:text="退出"
+                android:textColor="@color/BtuTextColor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

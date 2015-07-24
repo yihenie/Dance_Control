@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Theme_Color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/me_talk_dital_list_HostNum"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="333"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/me_talk_dital_list_UpDownimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/icon_up" />
+
+        <TextView
+            android:id="@+id/me_talk_dital_list_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:text="今天大家玩嗨了吗？"
+            android:textColor="#555555"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/me_talk_dital_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right|top"
+            android:text="2012-12-12"
+            android:textColor="#555555"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/me_talk_dital_list_repeat_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/me_talk_dital_list_time"
+            android:background="@drawable/trends_num_shape"
+            android:text="3"
+            android:textColor="#555555"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

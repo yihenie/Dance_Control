@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/me_movie_dital_list_Num"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="3"
+        android:textSize="@dimen/CommenTextSize"
+		android:textColor="@color/Common_Word" />
+
+    <ImageView
+        android:id="@+id/me_movie_dital_list_UpDownimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/icon_up" />
+
+    <TextView
+        android:id="@+id/me_movie_dital_list_intro"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:paddingTop="1dp"
+        android:singleLine="true"
+        android:text="江州曳舞，绝对精彩"
+        android:textSize="@dimen/CommenTextSize"
+		android:textColor="@color/Common_Word" />
+
+</LinearLayout>

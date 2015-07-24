@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <LinearLayout
+        android:id="@+id/add_talk_layout_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Common_Text"
+            android:text="内容"
+            android:textSize="@dimen/CommenTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_talk_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_talk_layout_0"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/commen_edit_shape"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_talk_edit_word"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="left|top"
+            android:hint="发表内容"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_talk_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/add_talk_layout_1"
+        android:layout_marginTop="5dp"
+        android:background="@color/BackTopColor"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/add_talk_addpic"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/White"
+            android:scaleType="fitXY"
+            android:src="@drawable/setimage" />
+
+        <ImageView
+            android:id="@+id/add_talk_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_talk_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/add_talk_layout_2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inform_shape" >
+
+        <Button
+            android:id="@+id/add_talk_input"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btu_selector"
+            android:textColor="@color/BtuTextColor"
+            android:text="提交" />
+    </RelativeLayout>
+
+</RelativeLayout>

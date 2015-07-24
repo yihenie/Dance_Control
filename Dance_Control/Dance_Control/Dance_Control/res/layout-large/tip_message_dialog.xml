@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tip_dialog_shape" >
+
+     <include android:id="@+id/head" layout = "@layout/tip_dialog_head"/>
+    
+    <LinearLayout
+        android:id="@+id/tip_message_dialog_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below = "@id/head"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tip_message_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tip_message_dialog_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_message_dialog_layout_1"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/tip_message_dialog_sure"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="确定"
+            android:textColor="@color/BtuTextColor"
+        	android:textSize="@dimen/CommenTextSize" />
+
+        <Button
+            android:id="@+id/tip_message_dialog_cancel"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="取消"
+            android:textColor="@color/BtuTextColor"
+        	android:textSize="@dimen/CommenTextSize"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tip_dialog_shape" >
+
+    <LinearLayout
+        android:id="@+id/dital_info_exchange_dialog_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/dital_info_exchange_order"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="新团长名字"
+            android:paddingLeft="5dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dital_info_exchange_dialog_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dital_info_exchange_dialog_layout_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/dital_info_exchange_fuorder"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="新的副团长"
+            android:paddingLeft="5dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/dital_info_exchange_dialog_layout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dital_info_exchange_dialog_layout_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/dital_info_exchange_tuanzhishu"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="新的团支书"
+            android:paddingLeft="5dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dital_info_exchange_dialog_layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dital_info_exchange_dialog_layout_3"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/dital_info_exchange_dialog_sure"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btu_selector"
+            android:text="确定"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/dital_info_exchange_dialog_cancel"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btu_selector"
+            android:text="取消"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

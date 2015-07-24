@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/item_option_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="删 除"
+        android:textColor="@color/BtuTextColor"
+        android:background="@drawable/btu_selector"
+        android:textSize="@dimen/CommenTextSize" />
+
+    <Button
+        android:id="@+id/item_option_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btu_selector"
+        android:gravity="center"
+        android:text="查 看"
+        android:textColor="@color/BtuTextColor"
+        android:textSize="@dimen/CommenTextSize" />
+
+</LinearLayout>

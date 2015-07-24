@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tip_dialog_shape" >
+
+    <EditText
+        android:id="@+id/edit_inform_dialog_edit"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/no_edge_edit_shape"
+        android:gravity="left|top"
+        android:textSize="@dimen/TipDialogWordSize"
+        android:hint="更新"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_inform_dialog_edit_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_inform_dialog_edit"
+        android:layout_marginTop="@dimen/TipDialogBtuDistance"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_inform_dialog_sure_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="确认"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/edit_inform_dialog_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="取消"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

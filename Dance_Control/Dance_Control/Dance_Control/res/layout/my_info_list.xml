@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_shape"
+    android:orientation="vertical" >
+<!-- 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" > -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/my_info_list_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_set"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/my_info_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/my_info_list_img"
+                android:text="标题"
+                android:textSize="@dimen/LowTitleTextSize" />
+
+            <TextView
+                android:id="@+id/my_info_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_info_list_title"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/my_info_list_img"
+                android:text="简介"
+                android:textSize="@dimen/LowSWTextSize" />
+
+            <TextView
+                android:id="@+id/my_info_hit_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_info_brief"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/my_info_list_img"
+                android:text="0"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/my_info_title_hit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/my_info_hit_num"
+                android:layout_below="@id/my_info_brief"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/my_info_hit_num"
+                android:text="阅读"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/my_info_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/my_info_hit_num"
+                android:layout_marginRight="10dp"
+                android:text="时间"
+                android:textSize="@dimen/LowTimeTextSize" />
+
+            <ImageView
+                android:id="@+id/my_info_list_option"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/option"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    <!--     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/option_end">
+            </ImageView>
+        </RelativeLayout>
+    </FrameLayout> -->
+
+</LinearLayout>

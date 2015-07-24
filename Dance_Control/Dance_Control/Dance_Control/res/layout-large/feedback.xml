@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+        <TextView
+            android:id="@+id/feedback_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:shadowColor="@color/Theme_Color"
+            android:text="所有程序的问题可以直接与开发人员交流."
+            android:textColor="@color/Common_Word"
+            android:textSize="@dimen/CommenTextSize" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedback_title"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:shadowColor="@color/Theme_Color"
+            android:text="技术人员QQ联系方式：813825509"
+            android:textColor="@color/Common_Word"
+            android:textSize="@dimen/CommenTextSize" />
+
+</RelativeLayout>

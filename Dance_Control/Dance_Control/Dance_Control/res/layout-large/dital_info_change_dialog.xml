@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tip_dialog_shape" >
+
+    <include layout="@layout/tip_dialog_head" android:id="@+id/head"/>
+    
+    <RelativeLayout
+        android:id="@+id/dital_info_change_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/dital_info_change_dialog_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dital_info_change_dialog_truename"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/EditTextHeight"
+                android:background="@drawable/no_edge_edit_shape"
+                android:hint="真实名称"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/CommenHintSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dital_info_change_dialog_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dital_info_change_dialog_layout_1"
+            android:layout_below="@id/dital_info_change_dialog_layout_1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dital_info_change_dialog_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原名："
+                android:textColor="#555555"
+                android:textSize="@dimen/ChangNameSmallText" />
+
+            <TextView
+                android:id="@+id/dital_info_change_dialog_oldname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#555555"
+                android:textSize="@dimen/ChangNameSmallText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dital_info_change_dialog_layout_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/dital_info_change_dialog_layout_1"
+            android:layout_toRightOf="@id/dital_info_change_dialog_layout_1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dital_info_change_dialog_yewuname"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/EditTextHeight"
+                android:background="@drawable/no_edge_edit_shape"
+                android:hint="曳舞名称"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/CommenHintSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dital_info_change_dialog_layout_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dital_info_change_dialog_layout_3"
+            android:layout_below="@id/dital_info_change_dialog_layout_3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dital_info_change_dialog_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原名："
+                android:textColor="#555555"
+                android:textSize="@dimen/ChangNameSmallText" />
+
+            <TextView
+                android:id="@+id/dital_info_change_dialog_oldyewuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#555555"
+                android:textSize="@dimen/ChangNameSmallText" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dital_info_change_dialog_layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dital_info_change_layout"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/dital_info_change_dialog_sure"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="确定"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/dital_info_change_dialog_cancel"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="取消"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

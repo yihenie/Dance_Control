@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/regiment_movie_head"
+        layout="@layout/regiment_head" />
+
+    <TextView
+        android:id="@+id/regiment_movie_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiment_movie_head"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/Common_Text"
+        android:text="曳舞视频"
+        android:padding="5dp"
+		android:textSize="@dimen/CommenTextSize"
+        android:textColor="@color/Common_Word" />
+
+    <LinearLayout
+        android:id="@+id/regiment_movie_addmovie_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/regiment_movie_head"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <ImageButton
+            android:id="@+id/regiment_movie_addmovie_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/add_video" />
+    </LinearLayout>
+
+    <com.example.updownview.AllowScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/regiment_movie_addmovie_layout"
+        android:gravity="center"
+        android:scrollbars="vertical" >
+
+        <com.example.updownview.DownFreshLinear
+            android:id="@+id/regiment_movie_layoutDownFresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/regiment_movie_inner_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:scrollbars="none" />
+
+           <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inform_shape"
+                android:gravity="center"
+                android:text="没有啦！" /> -->
+        </com.example.updownview.DownFreshLinear>
+    </com.example.updownview.AllowScrollView>
+
+</RelativeLayout>

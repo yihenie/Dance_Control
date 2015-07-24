@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/CommenTextSize"
+        android:textColor="@color/Common_Word"
+        android:text="现今播放SWF文件视频,请确保安装UC浏览器\n\n程序猿正在努力实现SWF动画播放技术，程序猿将会在后期更新中取消使用UC浏览器" />
+
+</RelativeLayout>

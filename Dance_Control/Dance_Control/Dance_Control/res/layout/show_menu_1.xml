@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/show_menu_layout_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_top_1" >
+
+        <ImageView
+            android:id="@+id/show_menu_member_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/show_menu_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/show_menu_member_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/show_menu_member_img"
+            android:text="游客"
+            android:textColor="@color/White" />SG
+
+        <ImageView
+            android:id="@+id/show_menu_member_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_menu_member_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/show_menu_member_img"
+            android:src="@drawable/icon_pop_qz_boy" />
+
+        <ImageView
+            android:id="@+id/show_menu_member_power"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_stranger" />
+    </RelativeLayout>
+
+    <!--
+         <ImageView
+        android:id="@+id/show_menu_1_img"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/show_menu_member_img"
+        android:src="@drawable/home_icon" />
+    -->
+
+    <ListView
+        android:id="@+id/show_menu_1_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_menu_layout_0"
+        android:layout_marginTop="5dp"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+
+</RelativeLayout>

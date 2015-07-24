@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "transparent">#00000000</color>
+    <color name = "commom">#99D9EA</color>
+    <color name = "Theme_Color">#f0f0f0</color>
+    <color name = "Common_Text">#ffffff</color><!-- #3ab8f5 -->
+    <color name = "Common_Word">#555555</color>
+    <color name = "TitleColor">#ffffff</color>
+    <color name = "Dialog_Back">#bcbcbc</color><!-- adadad -->
+    <color name = "Show_Back">#50000000</color><!--显示图片的模糊背景  -->
+    <color name = "SelectorBack">#50ffffff</color>
+    <color name = "MenuColor">#ffffff</color><!-- 90000000 -->
+    <color name = "EmotionBack">#E6E6E6</color>
+    <color name = "EmotionLine">#D7D7D7</color>
+    <color name = "EditLine">#c3c3c3</color>
+    <color name = "White">#ffffff</color>
+    <color name = "Black">#000000</color>
+    <color name = "Gray">#4c4c4c</color>
+    <color name = "BackTopColor">#f0f0f0</color><!--第一层布局的颜色  -->
+    <color name = "HeadBackColor">#004080</color><!--3ab8f5  -->
+    <color name = "BtuTextColor">#ffffff</color>
+    <color name = "ToAddActivityBack">#3ab8f5</color><!--  增加详细信息的Activity的背景-->
+</resources>

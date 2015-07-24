@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/regiment_pic_dital_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/regiment_img_shape"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_set" />
+
+    <TextView
+        android:id="@+id/regiment_pic_dital_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/regiment_pic_dital_img"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/regiment_pic_dital_img"
+        android:text="1"
+        android:textSize="@dimen/CommenTextSize"
+        android:textColor="@color/Common_Word" />
+
+    <ImageView
+        android:id="@+id/regiment_pic_dital_praise"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/regiment_pic_dital_img"
+        android:layout_alignRight="@id/regiment_pic_dital_img"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/praise_before" />
+
+    <ImageView
+        android:id="@+id/regiment_pic_dital_option"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/regiment_pic_dital_img"
+        android:layout_alignTop="@id/regiment_pic_dital_img"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#ffffff"
+        android:src="@drawable/delete_icon"
+        android:visibility="invisible" />
+
+</RelativeLayout>

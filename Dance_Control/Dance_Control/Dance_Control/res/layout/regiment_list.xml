@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_shape" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/regiment_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/regiment_img_shape"
+            android:src="@drawable/img_set" />
+
+        <TextView
+            android:id="@+id/regiment_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/regiment_img"
+            android:text="舞团名称:" />
+
+        <TextView
+            android:id="@+id/regiment_text_right_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/regiment_text_1"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/regiment_text_1"
+            android:text="ky" />
+
+        <TextView
+            android:id="@+id/regiment_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_text_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/regiment_img"
+            android:text="舞团现役团长:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/regiment_text_right_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/regiment_text_2"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/regiment_text_2"
+            android:text="aaaa" />
+
+        <TextView
+            android:id="@+id/regiment_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_text_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/regiment_img"
+            android:text="舞团人数:" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/regiment_text_right_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/regiment_text_3"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/regiment_text_3"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/regiment_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_text_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/regiment_img"
+            android:text="舞团所属地址:" />
+
+        <TextView
+            android:id="@+id/regiment_text_right_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/regiment_text_4"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/regiment_text_4"
+            android:text="河北邯郸" />
+    </RelativeLayout>
+
+</LinearLayout>

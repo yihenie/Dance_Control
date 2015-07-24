@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/repeat_dialog_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_shape" >
+
+     <!--    <ImageView
+            android:id="@+id/repeat_dialog_title_img"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/home_icon" /> -->
+
+        <TextView
+            android:id="@+id/repeat_dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/Common_Word"
+            android:text="接收方" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/repeat_dialog_aim_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/repeat_dialog_text"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/Common_Word"
+            android:layout_toRightOf="@id/repeat_dialog_text"
+            android:text="" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/repeat_dialog_edit_word"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/repeat_dialog_text"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="内容"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:textColor="@color/Common_Word"
+            android:textSize="@dimen/CommenTextSize"
+            android:background="@drawable/no_edge_edit_shape" />
+
+        <Button
+            android:id="@+id/repeat_dialog_button_exit"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/repeat_dialog_edit_word"
+            android:layout_below="@id/repeat_dialog_edit_word"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize"
+            android:background="@drawable/btu_selector"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/repeat_dialog_button_inform"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/repeat_dialog_edit_word"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/repeat_dialog_button_exit"
+            android:background="@drawable/btu_selector"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize"
+            android:text="确认" />
+    </RelativeLayout>
+
+</RelativeLayout>

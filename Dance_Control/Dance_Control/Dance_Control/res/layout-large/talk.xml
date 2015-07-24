@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <include
+        android:id="@+id/talk_head"
+        layout="@layout/regiment_head" />
+
+    <RelativeLayout
+        android:id="@+id/talk_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/talk_head"
+        android:layout_marginTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/talk_write_btu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            
+            android:background="@drawable/add_forum" />
+    </RelativeLayout>
+
+    <com.example.updownview.AllowScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/talk_layout"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+        <com.example.updownview.DownFreshLinear
+            android:id="@+id/talk_layout_DownFresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/talk_inner_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@color/transparent"
+                android:dividerHeight="3dp"
+                android:scrollbars="none" >
+            </ListView>
+
+           <!--  <TextView
+                android:id="@+id/talk_inner_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inform_shape"
+                android:gravity="center"
+                android:text="没有啦！" /> -->
+        </com.example.updownview.DownFreshLinear>
+    </com.example.updownview.AllowScrollView>
+
+</RelativeLayout>

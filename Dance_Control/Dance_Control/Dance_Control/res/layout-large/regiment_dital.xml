@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_shape" >
+
+        <ImageView
+            android:id="@+id/regiment_dital_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/no_edge_edit_shape" />
+
+        <ImageButton
+            android:id="@+id/regiment_dital_exit_btu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_close" />
+
+        <RelativeLayout
+            android:id="@+id/regiment_dital_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regiment_dital_img"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/no_edge_edit_shape" >
+
+            <TextView
+                android:id="@+id/regiment_dital_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="舞团名称："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_1"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize"
+                android:layout_toRightOf="@id/regiment_dital_title_1"
+                android:text="曳舞团" />
+
+            <TextView
+                android:id="@+id/regiment_dital_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_dital_text_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="舞团团长："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_dital_title_2"
+                android:text="小鹤"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_dital_text_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="团支书："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_3"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_dital_title_3"
+                android:text="小梦"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_text_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="小黑"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_dital_text_2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/regiment_dital_text_4"
+                android:text="副团长："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_title_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_dital_text_4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="舞团所属地区："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize"/>
+
+            <TextView
+                android:id="@+id/regiment_dital_text_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_5"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_dital_title_5"
+                android:text="河北"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_text_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_dital_title_5"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="12"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <TextView
+                android:id="@+id/regiment_dital_title_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_dital_text_4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/regiment_dital_text_6"
+                android:text="人数："
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/CommenTextSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/regiment_dital_title_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_dital_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Common_Text"
+            android:text="舞团介绍"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/Common_Word" />
+
+        <TextView
+            android:id="@+id/regiment_dital_text_intro"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/regiment_dital_title_7"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textSize="@dimen/CommenTextSize"
+            android:textColor="@color/Common_Word"
+            android:background="@drawable/no_edge_edit_shape" />
+
+        <TextView
+            android:id="@+id/regiment_dital_blank"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/regiment_dital_join"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/regiment_dital_text_intro"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/regiment_dital_blank"
+            android:background="@drawable/btu_selector"
+            android:text="加入"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize" />
+
+        <Button
+            android:id="@+id/regiment_dital_visit"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/regiment_dital_text_intro"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toLeftOf="@id/regiment_dital_blank"
+            android:background="@drawable/btu_selector"
+            android:text="访问"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

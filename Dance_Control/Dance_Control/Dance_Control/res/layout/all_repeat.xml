@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <RelativeLayout
+        android:id="@+id/all_repeat_talk_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regiment_dital_layout_shape" >
+
+        <ImageView
+            android:id="@+id/all_repeat_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/all_repeat_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/all_repeat_head"
+            android:text="名字"
+            android:textSize="@dimen/LowNameTextSize" />
+
+        <TextView
+            android:id="@+id/all_repeat_praise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/all_repeat_name_text"
+            android:layout_marginRight="3dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/all_repeat_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/all_repeat_name_text"
+            android:layout_below="@id/all_repeat_name_text"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/all_repeat_head"
+            android:text="时间"
+            android:textSize="@dimen/LowTimeTextSize" />
+
+        <TextView
+            android:id="@+id/all_repeat_talkword_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_repeat_head"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:text="内容"
+            android:textSize="@dimen/LowNameTextSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/all_repeat_two_to_one_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/all_repeat_repeatWherelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/EmotionBack"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/all_repeat_expression_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@color/transparent"
+                android:src="@drawable/emotion" />
+
+            <EditText
+                android:id="@+id/all_repeat_write_edit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+				android:padding="2dp"
+                android:textSize="15sp"
+                android:lineSpacingExtra="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/emotion_inform_shape"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/all_repeat_repeat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/emotion_repeat_shape"
+                android:text="发送"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/repeat_emotion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <GridView
+                android:id="@+id/emotion_gridview"
+                android:layout_width="match_parent"
+                android:background="@color/EmotionBack"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/EmotionLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/EmotionBack"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/emotion_select_ali"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ali_051" />
+
+                <ImageView
+                    android:id="@+id/emotion_select_line_2"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/emotion_select_ali"
+                    android:background="@color/EmotionLine" />
+
+                <ImageButton
+                    android:id="@+id/emotion_select_bear"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/emotion_select_line_2"
+                    android:background="#00000000"
+                    android:src="@drawable/b_00" />
+
+                <ImageView
+                    android:id="@+id/emotion_select_line_3"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/emotion_select_bear"
+                    android:background="@color/EmotionLine" />
+
+                <ImageButton
+                    android:id="@+id/emotion_select_emotion"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/emotion_select_line_3"
+                    android:background="#00000000"
+                    android:src="@drawable/image_emoticon01" />
+
+                <ImageButton
+                    android:id="@+id/emotion_select_exit"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:src="@drawable/icon_emotion_exit_n" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/all_repeat_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/all_repeat_two_to_one_layout"
+        android:layout_below="@id/all_repeat_talk_info"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <ListView
+                android:id="@+id/all_repeat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="3dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

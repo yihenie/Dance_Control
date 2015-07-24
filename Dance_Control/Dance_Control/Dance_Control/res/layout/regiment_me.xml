@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <ImageView
+        android:id="@+id/regiment_me_backimg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/head_back_2" />
+
+    <ImageView
+        android:id="@+id/regiment_me_head_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/me_head_img_shape"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_head" />
+
+    <ImageButton
+        android:id="@+id/regiment_me_assgin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inform_shape"
+        android:src="@drawable/icon_sign" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/hot_shape" >
+
+        <ImageView
+            android:id="@+id/regiment_me_head_hotimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/icon_live_hot" />
+
+        <TextView
+            android:id="@+id/regiment_me_host"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="0" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/regiment_me_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiment_me_backimg" >
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/regiment_me_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:text="姓名"
+                android:textColor="@color/Common_Word" />
+
+            <ImageView
+                android:id="@+id/regiment_me_power_sym"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/regiment_me_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/regiment_me_name"
+                android:src="@drawable/icon_stranger" />
+
+            <ImageView
+                android:id="@+id/regiment_me_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_me_name"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_pop_qz_boy" />
+
+            <TextView
+                android:id="@+id/regiment_me_virtural_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/regiment_me_sex"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_me_sex"
+                android:text="曳舞``"
+                android:textColor="@color/Common_Word" />
+
+            <ImageView
+                android:id="@+id/regiment_me_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/regiment_me_virtural_name"
+                android:layout_marginTop="3dp"
+                android:background="@color/EmotionLine" />
+
+            <ImageButton
+                android:id="@+id/regiment_me_set_info"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:src="@drawable/btu_talk_write" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_me_row_1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/regiment_me_host_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="登录账号："
+                android:textColor="@color/Common_Word"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/regiment_me_host_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_me_host_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_me_host_title"
+                android:text="xxxxxxxx"
+                android:textColor="@color/Common_Word" />
+
+            <TextView
+                android:id="@+id/regiment_me_password_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regiment_me_host_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="登录密码："
+                android:textColor="@color/Common_Word"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/regiment_me_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/regiment_me_password_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/regiment_me_password_title"
+                android:text="********"
+                android:textColor="@color/Common_Word" />
+
+            <ImageView
+                android:id="@+id/regiment_me_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/regiment_me_password_text"
+                android:layout_marginTop="3dp"
+                android:background="@color/EmotionLine" />
+
+            <ImageView
+                android:id="@+id/regiment_me_icon_right_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_right_to" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_row_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiment_me_row_2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/regiment_me_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="最新动态："
+                android:textColor="@color/Common_Word"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/regiment_me_new_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/regiment_me_news"
+                android:src="@drawable/icon_news_head_new"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/regiment_me_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/regiment_me_news"
+                android:layout_marginTop="3dp"
+                android:background="@color/EmotionLine" />
+
+            <ImageView
+                android:id="@+id/regiment_me_icon_right_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_right_to" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/regiment_me_inner_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiment_me_layout_1" >
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_inner_show_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-75dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/me_inner_show_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/transparent"
+                android:src="@drawable/tag_3" />
+
+            <TextView
+                android:id="@+id/me_inner_show_movie_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/me_inner_show_movie"
+                android:layout_alignLeft="@id/me_inner_show_movie"
+                android:background="@drawable/trends_num_shape"
+                android:text="0" />
+
+            <RelativeLayout
+                android:id="@+id/regiment_me_inner_show_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/me_inner_show_movie"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/regiment_me_movie_UpDown_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_up" />
+
+                <TextView
+                    android:id="@+id/regiment_me_movie_Change_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_movie_UpDown_pic"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/regiment_me_movie_UpDown_pic"
+                    android:text="0"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/regiment_me_movie_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_movie_Change_num"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/regiment_me_movie_Change_num"
+                    android:text="人气："
+                    android:textColor="#555555" />
+
+                <ImageView
+                    android:id="@+id/regiment_me_movie_hotimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_movie_Change_num"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@id/regiment_me_movie_title"
+                    android:src="@drawable/icon_live_hot" />
+
+                <ScrollView
+                    android:id="@+id/regiment_me_movie_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/regiment_me_movie_UpDown_pic"
+                    android:layout_marginTop="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/regiment_me_movie_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:dividerHeight="2dp"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/regiment_me_movie_buttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="最新的了"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_inner_show_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-75dp"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/me_inner_show_talk"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/tag_1" />
+
+            <TextView
+                android:id="@+id/me_inner_show_talk_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/me_inner_show_talk"
+                android:layout_alignLeft="@id/me_inner_show_talk"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/trends_num_shape"
+                android:text="0" />
+
+            <RelativeLayout
+                android:id="@+id/regiment_me_inner_show_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/me_inner_show_talk"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/regiment_me_talk_UpDown_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_up" />
+
+                <TextView
+                    android:id="@+id/regiment_me_talk_Change_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_talk_UpDown_pic"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/regiment_me_talk_UpDown_pic"
+                    android:text="0"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/regiment_me_talk_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_talk_Change_num"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/regiment_me_talk_Change_num"
+                    android:text="人气："
+                    android:textColor="#555555" />
+
+                <ImageView
+                    android:id="@+id/regiment_me_talk_hotimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_talk_Change_num"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@id/regiment_me_talk_title"
+                    android:src="@drawable/icon_live_hot" />
+
+                <ScrollView
+                    android:id="@+id/regiment_me_talk_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/regiment_me_talk_UpDown_pic"
+                    android:layout_marginTop="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/regiment_me_talk_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:dividerHeight="2dp"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/regiment_me_talk_buttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="最新的了"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_inner_show_title_3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-75dp"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/me_inner_show_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/tag_2" />
+
+            <TextView
+                android:id="@+id/me_inner_show_pic_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/me_inner_show_pic"
+                android:layout_alignLeft="@id/me_inner_show_pic"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/trends_num_shape"
+                android:text="0" />
+
+            <RelativeLayout
+                android:id="@+id/regiment_me_inner_show_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/me_inner_show_pic"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/regiment_me_pic_UpDown_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_up" />
+
+                <TextView
+                    android:id="@+id/regiment_me_pic_Change_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_pic_UpDown_pic"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/regiment_me_pic_UpDown_pic"
+                    android:text="0"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/regiment_me_pic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_pic_Change_num"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/regiment_me_pic_Change_num"
+                    android:text="人气："
+                    android:textColor="#555555" />
+
+                <ImageView
+                    android:id="@+id/regiment_me_pic_hotimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_pic_Change_num"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@id/regiment_me_pic_title"
+                    android:src="@drawable/icon_live_hot" />
+
+                <ScrollView
+                    android:id="@+id/regiment_me_pic_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/regiment_me_pic_UpDown_pic"
+                    android:layout_marginTop="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/regiment_me_pic_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:dividerHeight="2dp"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/regiment_me_pic_buttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="最新的了"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/regiment_me_inner_show_title_4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-75dp"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/me_inner_show_music"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/tag_4" />
+
+            <TextView
+                android:id="@+id/me_inner_show_music_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/me_inner_show_music"
+                android:layout_alignLeft="@id/me_inner_show_music"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/trends_num_shape"
+                android:text="0" />
+
+            <RelativeLayout
+                android:id="@+id/regiment_me_inner_show_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/me_inner_show_music"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/regiment_me_music_UpDown_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_up" />
+
+                <TextView
+                    android:id="@+id/regiment_me_music_Change_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_music_UpDown_pic"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/regiment_me_music_UpDown_pic"
+                    android:text="0"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/regiment_me_music_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_music_Change_num"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/regiment_me_music_Change_num"
+                    android:text="人气："
+                    android:textColor="#555555" />
+
+                <ImageView
+                    android:id="@+id/regiment_me_music_hotimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/regiment_me_music_Change_num"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@id/regiment_me_music_title"
+                    android:src="@drawable/icon_live_hot" />
+
+                <ScrollView
+                    android:id="@+id/regiment_me_music_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/regiment_me_music_UpDown_pic"
+                    android:layout_marginTop="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/regiment_me_music_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:dividerHeight="2dp"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/regiment_me_music_buttom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="最新的了"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/regiment_me_change"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/regiment_me_head_img"
+        android:layout_alignTop="@+id/regiment_me_assgin"
+        android:text="换届"
+        android:background="@drawable/change_selector"
+        android:textSize="@dimen/CommenTextSize"
+        android:textColor="@color/Common_Word" />
+
+</RelativeLayout>

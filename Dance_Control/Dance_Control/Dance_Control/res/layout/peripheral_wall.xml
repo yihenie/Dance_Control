@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/wall_head"
+        layout="@layout/regiment_head" />
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:text="挂载的服饰广告" />
+    
+    <!--
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="15dp"
+        android:text="现在还没有外设挂载出售哦" />
+    -->
+
+    <ImageView
+        android:id="@+id/ad_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/ad_1" />
+
+    <ImageView
+        android:id="@+id/ad_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/ad_2" />
+    
+    <ImageView
+        android:id="@+id/ad_3"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/ad_3" />
+
+</LinearLayout>

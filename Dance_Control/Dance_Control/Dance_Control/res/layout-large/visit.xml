@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/Common_Text"
+                android:gravity="center"
+                android:textColor="@color/Common_Word"
+                android:text="账号"
+                android:padding="5dp"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <EditText
+                android:id="@+id/visit_edit_host"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/EditTextHeight"
+                android:layout_gravity="center"
+                android:background="@drawable/no_edge_edit_shape"
+                android:hint="账号"
+                android:singleLine="true"
+                android:textSize="@dimen/CommenHintSize"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/Common_Text"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/Common_Word"
+                android:text="密码"
+                android:padding="5dp"
+                android:textSize="@dimen/CommenTextSize" />
+
+            <EditText
+                android:id="@+id/visit_edit_password"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/EditTextHeight"
+                android:layout_gravity="center"
+                android:background="@drawable/no_edge_edit_shape"
+                android:hint="密码"
+                android:textSize="@dimen/CommenHintSize"
+                android:paddingLeft="5dp"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/visit_button_insert"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/EmotionBtuHeight"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btu_selector"
+                android:text="团员"
+                android:textColor="@color/BtuTextColor"
+        		android:textSize="@dimen/CommenTextSize" />
+
+            <Button
+                android:id="@+id/visit_button_exit"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/EmotionBtuHeight"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/visit_button_insert"
+                android:background="@drawable/btu_selector"
+                android:text="退出"
+                android:textColor="@color/BtuTextColor"
+        		android:textSize="@dimen/CommenTextSize"/>
+
+            <Button
+                android:id="@+id/visit_button_pass"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/EmotionBtuHeight"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/visit_button_insert"
+                android:background="@drawable/btu_selector"
+                android:text="游客"
+                android:textColor="@color/BtuTextColor"
+        		android:textSize="@dimen/CommenTextSize"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

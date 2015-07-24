@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/show_info_dital_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/Theme_Color" >
+
+            <TextView
+                android:id="@+id/show_info_dital_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/Common_Text"
+                android:text="标题"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/InfoTitleSize" />
+
+            <TextView
+                android:id="@+id/show_info_dital_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_info_dital_title"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/Common_Text"
+                android:text="简述"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/LowNameTextSize" />
+
+            <TextView
+                android:id="@+id/show_info_dital_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/show_info_dital_brief"
+                android:background="@color/Common_Text"
+                android:gravity="right"
+                android:text="时间"
+                android:textColor="@color/Common_Word"
+                android:textSize="@dimen/LowTimeTextSize" />
+
+            <ImageView
+                android:id="@+id/show_info_dital_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/show_info_dital_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/inform_shape"
+                android:src="@drawable/img_set" />
+
+            <TextView
+                android:id="@+id/show_info_dital_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/show_info_dital_img"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:lineSpacingExtra="3dp"
+                android:padding="5dp"
+                android:text="内容"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/show_info_dital_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:src="@drawable/refresh" />
+
+</RelativeLayout>

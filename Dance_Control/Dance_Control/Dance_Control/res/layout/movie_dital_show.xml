@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<VideoView android:id = "@+id/movie_dital_show_movieview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_below="@id/movie_dital_show_movieview"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+	<ImageButton android:id = "@+id/movie_dital_show_stop_button" 
+	    android:layout_width = "30dp"
+	    android:layout_height = "30dp"
+	    android:layout_weight="1"/>
+	
+	<SeekBar android:id = "@+id/movie_dital_show_Seekbar"
+	    android:layout_width = "wrap_content"
+	    android:layout_weight="10"
+	    android:layout_height = "wrap_content"/>
+	
+	<SeekBar android:id = "@+id/movie_dital_show_voice_Seekbar"
+	    android:layout_width = "wrap_content"
+	    android:layout_weight="2"
+	    android:layout_height = "wrap_content"/>
+	
+		
+	<ImageButton android:id = "@+id/movie_dital_show_enlarge"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_weight="1"/>
+</LinearLayout>
+</RelativeLayout>

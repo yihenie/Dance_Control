@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color" >
+
+    <include
+        android:id="@+id/my_info_head"
+        layout="@layout/regiment_head" />
+
+    <TextView
+        android:id="@+id/my_info_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_info_head"
+        android:layout_marginTop="5dp"
+        android:background="@color/Common_Text"
+        android:layout_marginLeft="1dp"
+        android:text="通知"
+        android:textColor="@color/Common_Word"
+        android:textSize="@dimen/CommenTextSize" />
+
+    <ImageView
+        android:id="@+id/my_info_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/my_info_title_1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/my_info_title_1"
+        android:src="@drawable/icon_notice" />
+
+    <TextView
+        android:id="@+id/my_info_inform"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/my_info_title_1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/no_edge_edit_shape"
+        android:hint="通知"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/my_info_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_info_inform"
+        android:layout_marginTop="10dp"
+        android:background="@color/Common_Text"
+        android:text="舞团资讯"
+        android:layout_marginLeft="1dp"
+        android:textColor="@color/Common_Word"
+        android:textSize="@dimen/CommenTextSize" />
+
+    <LinearLayout
+        android:id="@+id/my_info_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/my_info_inform"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <ImageButton
+            android:id="@+id/my_infor_insert"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add_forum" />
+    </LinearLayout>
+
+    <com.example.updownview.AllowScrollView
+        android:id="@+id/my_info_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_info_title_2"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" >
+
+        <com.example.updownview.DownFreshLinear
+            android:id="@+id/my_info_DownFresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/my_info_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent"
+                android:dividerHeight="3dp"
+                android:scrollbars="none" >
+            </ListView>
+
+            <!--
+                 <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inform_shape"
+                android:gravity="center"
+                android:text="没有啦！" />
+            -->
+        </com.example.updownview.DownFreshLinear>
+    </com.example.updownview.AllowScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tip_dialog_shape" >
+
+    <LinearLayout
+        android:id="@+id/delet_dialog_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Common_Text"
+            android:text="确定删除 ？"
+            android:textColor="@color/Common_Word"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delet_dialog_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delet_dialog_layout_1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/delet_dialog_true"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btu_selector"
+            android:text="确认"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/delet_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="取消"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

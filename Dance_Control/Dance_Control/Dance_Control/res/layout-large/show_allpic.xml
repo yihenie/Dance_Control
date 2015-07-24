@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/show_allpic_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/show_allpic_submitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/inform_shape" >
+
+        <Button
+            android:id="@+id/show_allpic_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/EmotionBtuHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btu_selector"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize"
+            android:enabled="false"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="提交" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/show_allpic_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/show_allpic_submitlayout"
+        android:layout_marginTop="2dp"
+        android:background="@color/Common_Word" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@id/show_allpic_line" >
+
+        <Button
+            android:id="@+id/show_allpic_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/EmotionBtuHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btu_selector"
+            android:enabled="false"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize"
+            android:text="上一页" />
+
+        <Button
+            android:id="@+id/show_allpic_next"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/EmotionBtuHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btu_selector"
+            android:textColor="@color/BtuTextColor"
+            android:textSize="@dimen/CommenTextSize"
+            android:text="下一页" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_Color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Common_Text"
+        android:layout_marginTop="5dp"
+        android:text="头像设置" />
+
+    <com.example.dance_control.circleimageview.CircleImage
+        android:id="@+id/add_regiment_img"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_set" />
+
+    <TextView
+        android:id="@+id/add_regiment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_img"
+        android:background="@color/Common_Text"
+        android:text="详细设置" />
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_mingcheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_img"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_regiment_name_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="舞团名称"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+
+        <EditText
+            android:id="@+id/add_regiment_order_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="团长名"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_tuanzhishu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_layout_mingcheng"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_regiment_secor_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="团支书名"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+
+        <EditText
+            android:id="@+id/add_regiment_second_ord_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="副团长名"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_suoyoudiqu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_layout_tuanzhishu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_regiment_addr_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="地址名"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+
+        <EditText
+            android:id="@+id/add_regiment_time_edit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="时间"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_guanlizhanghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_layout_suoyoudiqu"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_regiment_host_edit"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="管理员账号"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_guanlimima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_layout_guanlizhanghao"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_regiment_password_edit"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:hint="管理员密码"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_regiment_title_text_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_layout_guanlimima"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Common_Text"
+        android:text="舞团介绍："
+        android:textSize="@dimen/CommenHintSize" />
+
+    <RelativeLayout
+        android:id="@+id/add_regiment_layout_jieshao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_regiment_title_text_8" >
+
+        <EditText
+            android:id="@+id/add_regiment_intro_edit"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/no_edge_edit_shape"
+            android:gravity="left|top"
+            android:hint="介绍"
+            android:padding="5dp"
+            android:textSize="@dimen/CommenHintSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_regiment_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp" >
+
+        <Button
+            android:id="@+id/add_regiment_sure"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btu_selector"
+            android:text="提交"
+            android:textColor="@color/BtuTextColor" />
+
+        <Button
+            android:id="@+id/add_regiment_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/btu_selector"
+            android:text="退出"
+            android:textColor="@color/BtuTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

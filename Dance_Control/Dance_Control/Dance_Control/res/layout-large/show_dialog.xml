@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/show_dialog_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_left_to" />
+
+    <ImageView
+        android:id="@+id/show_dialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_set" />
+
+    <ImageView
+        android:id="@+id/show_dialog_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_right_to" />
+    
+     <Button
+        android:id="@+id/show_dialog_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/save_btu_shape"
+        android:text="保存"
+        android:padding="5dp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/CommenTextSize"
+        android:layout_alignLeft="@id/show_dialog_img"
+        android:layout_below="@id/show_dialog_img" />
+
+</RelativeLayout>
